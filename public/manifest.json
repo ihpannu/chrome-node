@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Insight",
+  "version": "0.2",
+  "content_scripts": [
+    {
+      "matches": ["https://freshconsulting.harvestapp.com/time"],
+      "css": ["/static/css/main.css"],
+      "js": ["/static/js/main.js"]
+    }
+  ]
+}

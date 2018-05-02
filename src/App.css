@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background: #f7f2eb;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: auto;
+  width: 72rem;
+  padding: 2rem;
+}
+.container h2 {
+  margin: 1.5rem 0;
+  font-weight: 900;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.projects h3 {
+  font-size: 1.25rem;
+  color: #5c5c5c;
+}
+.projects li {
+  color: #959595;
+  margin: 0.5rem 0;
+}
+.projects li span {
+  margin: 0 0.1rem;
+}
+.projects .hours {
+  color: #000;
+  font-weight: 900;
+}
+
+.project-one .list-one .square {
+  color: #38ac18;
+}
+
+.project-one .list-two .square {
+  color: #b5e4a5;
+}
+.project-two .list-one .square {
+  color: #2d92c7;
+}
+
+.project-three .list-two .square {
+  color: #e99440;
+}
+.project-three .list-one .square {
+  color: #fed5a7;
+}
+
+.project-two .list-two .square {
+  color: #8adbfe;
+}
+.project-four .list-one .square {
+  color: #f1d04e;
+}
+
+.project-four .list-two .square {
+  color: #fde78e;
+}
+
+.not-forecasted .project-one .square {
+  color: #884fda;
+}
+.not-forecasted .project-two .square {
+  color: #d5626f;
+}
+.not-forecasted .project-three .square {
+  color: #f17431;
+}
