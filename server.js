@@ -18,6 +18,19 @@ app.get("/api", (req, res) => {
   return res.send("Pong");
 });
 
+// static
+app.use((req, res, next) => {
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://chrome-insight.herokuapp.com/"
+  );
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
 // PROJECTS
 app.use("/api/projects", projects);
 
