@@ -25,5 +25,10 @@ app.use("/api/projects", projects);
 app.use("/api/assignments", assignments);
 // PEOPLE
 app.use("/api/people", people);
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"));
+}
+
 const port = process.env.PORT || 3333;
 app.listen(port, () => console.log(`listening on port ${port}`));
